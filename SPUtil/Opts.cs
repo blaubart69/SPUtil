@@ -42,9 +42,14 @@ namespace SPUtil
             if (showhelp)
             {
                 Console.WriteLine(
-                      "\nusage: SPUtil.exe [OPTIONS]"
+                      "\nusage: SPUtil.exe [OPTIONS] {command}"
                     + "\n\nOptions:");
                 BeeOpts.PrintOptions(cmdOpts);
+				Console.WriteLine(
+                      "\nCommand:"
+					+ "\n  l ........ list"
+			        + "\n  d {id} ... delete item with {id}"
+					+ "\n  da ....... delete all items");
                 return false;
             }
 
